@@ -1,0 +1,16 @@
+
+<h1>Sửa sản phẩm</h1>
+
+<form action="/edit-product" method="post">
+    <input placeholder="Nhập tên" name="name" value="{{item.name}}" />
+    <input placeholder="Nhập giá" name="price" value="{{item.price}}"/>
+    <input placeholder="Nhập số lượng" name="quantity" value="{{item.quantity}}"/>
+    <input placeholder="Hình" name="image" value="{{item.image}}"/>
+    <p>Loại sản phẩm</p>
+    {{!-- <select name="category">
+        {{#each listCate}}
+        <option value="{{_id}}">{{name}}</option>
+        {{/each}}
+    </select> --}}
+    <input type="submit" title="Submit"/>
+</form>
